@@ -673,9 +673,19 @@
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
                     </window>
                     <touchBar key="touchBar" id="Dcf-H4-x6C">
-                        <nil name="touchBarItems"/>
+                        <touchBarItems>
+                            <touchBarItem id="psT-KE-Ym9">
+                                <viewController key="viewController" id="91a-Qt-ZRx" customClass="CanvasViewController" customModule="Pictures_Came_With_NSTouchBar" customModuleProvider="target">
+                                    <view key="view" translatesAutoresizingMaskIntoConstraints="NO" id="GCA-cL-fOB" customClass="CanvasView" customModule="Pictures_Came_With_NSTouchBar" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                    </view>
+                                </viewController>
+                                <size key="designTimeSize" width="600" height="30"/>
+                            </touchBarItem>
+                        </touchBarItems>
                     </touchBar>
                     <connections>
+                        <outlet property="canvas" destination="91a-Qt-ZRx" id="z6G-Wv-fME"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
                     </connections>
                 </windowController>
