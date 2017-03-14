@@ -10,31 +10,34 @@ import Cocoa
 
 class CanvasView: NSView {
 
+  var data: Array<(Float, Float)> = [] // (value, score)
+
   override func draw(_ dirtyRect: NSRect) {
     super.draw(dirtyRect)
-    let grad: NSGradient! = NSGradient(colors:[NSColor.red, NSColor.yellow, NSColor.green])
+    let grad: NSGradient! = NSGradient(colors:[NSColor.green, NSColor.yellow, NSColor.red])
     let dataPath = NSBezierPath()
 
     dataPath.move(to:CGPoint(x: 0, y: 0))
 
-    var i: Int = 0
-    while i <= Int(dirtyRect.width) {
+    // TODO find min/max, determine scale factor automatically
+    let scaleFactor: Float = 1/2.5
+
+    for (index, (value, score)) in data.enumerated() {
       // Draw background
-      let rect = CGRect(x:i, y:0, width:1, height:Int(dirtyRect.height))
+      let rect = CGRect(x:index, y:0, width:1, height:Int(dirtyRect.height))
       let path = NSBezierPath(rect: rect)
-      let myColor = grad.interpolatedColor(atLocation: CGFloat(Float(arc4random()) / Float(UINT32_MAX)))
-      myColor.setFill()
+      let interpolatedColor = grad.interpolatedColor(atLocation: CGFloat(score))
+      interpolatedColor.setFill()
       path.fill()
 
       // Draw line
-      let y = Int(arc4random_uniform(20))
-      dataPath.line(to:CGPoint(x: i, y: y))
-      dataPath.move(to:CGPoint(x: i, y: y))
+      let scaledValue = Int(value*scaleFactor)
+      dataPath.line(to:CGPoint(x: index, y: scaledValue))
+      dataPath.move(to:CGPoint(x: index, y: scaledValue))
       NSColor.white.setStroke()
       dataPath.stroke()
-      i = i+1
     }
-    
+
   }
 
 }
