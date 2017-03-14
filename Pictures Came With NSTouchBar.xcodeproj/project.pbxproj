@@ -12,9 +12,7 @@
 		75125C131E77374400345EAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75125C121E77374400345EAB /* Assets.xcassets */; };
 		75125C161E77374400345EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75125C141E77374400345EAB /* Main.storyboard */; };
 		75125C1E1E77379F00345EAB /* HTMTouchBarVisualizationWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75125C1D1E77379F00345EAB /* HTMTouchBarVisualizationWindowController.swift */; };
-		75125C201E773D0700345EAB /* sierra_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 75125C1F1E773D0700345EAB /* sierra_background.jpg */; };
 		75125C261E7752CC00345EAB /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75125C251E7752CC00345EAB /* CanvasView.swift */; };
-		75FF675C1E77C99E00402765 /* data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 75FF675B1E77C99E00402765 /* data.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +23,7 @@
 		75125C151E77374400345EAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75125C171E77374400345EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75125C1D1E77379F00345EAB /* HTMTouchBarVisualizationWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMTouchBarVisualizationWindowController.swift; sourceTree = "<group>"; };
-		75125C1F1E773D0700345EAB /* sierra_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sierra_background.jpg; path = "../../NSTouchBarCatalogCreatingandCustomizingNSTouchBar/Swift/NSTouchBar Catalog/Assets.xcassets/sierra_background.imageset/sierra_background.jpg"; sourceTree = "<group>"; };
 		75125C251E7752CC00345EAB /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		75FF675B1E77C99E00402765 /* data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +60,9 @@
 				75125C101E77374400345EAB /* ViewController.swift */,
 				75125C121E77374400345EAB /* Assets.xcassets */,
 				75125C141E77374400345EAB /* Main.storyboard */,
-				75125C1F1E773D0700345EAB /* sierra_background.jpg */,
 				75125C171E77374400345EAB /* Info.plist */,
 				75125C1D1E77379F00345EAB /* HTMTouchBarVisualizationWindowController.swift */,
 				75125C251E7752CC00345EAB /* CanvasView.swift */,
-				75FF675B1E77C99E00402765 /* data.csv */,
 			);
 			path = "Pictures Came With NSTouchBar";
 			sourceTree = "<group>";
@@ -133,9 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75FF675C1E77C99E00402765 /* data.csv in Resources */,
 				75125C131E77374400345EAB /* Assets.xcassets in Resources */,
-				75125C201E773D0700345EAB /* sierra_background.jpg in Resources */,
 				75125C161E77374400345EAB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

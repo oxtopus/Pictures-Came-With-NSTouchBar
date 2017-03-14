@@ -14,7 +14,7 @@ class HTMTouchBarVisualizationWindowController: NSWindowController {
   
   override func windowDidLoad() {
     super.windowDidLoad()
-    
+
     // canned data
     canvasView.data.append((44.736, 0.00184671428962))
     canvasView.data.append((45.864, 0.00184671428962))
