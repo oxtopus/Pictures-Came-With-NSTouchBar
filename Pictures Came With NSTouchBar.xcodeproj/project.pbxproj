@@ -26,7 +26,7 @@
 		75125C171E77374400345EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75125C1D1E77379F00345EAB /* HTMTouchBarVisualizationWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMTouchBarVisualizationWindowController.swift; sourceTree = "<group>"; };
 		75125C251E7752CC00345EAB /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
-		75FF675D1E78447700402765 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		75FF675D1E78447700402765 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "Pictures Came With NSTouchBar/README.md"; sourceTree = "<group>"; };
 		75FF675F1E7846AA00402765 /* 2c451202aeca4768fdc968253bb621dd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 2c451202aeca4768fdc968253bb621dd.jpg; path = ../../../Desktop/2c451202aeca4768fdc968253bb621dd.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +44,7 @@
 		75125C021E77374400345EAB = {
 			isa = PBXGroup;
 			children = (
+				75FF675D1E78447700402765 /* README.md */,
 				75125C0D1E77374400345EAB /* Pictures Came With NSTouchBar */,
 				75125C0C1E77374400345EAB /* Products */,
 			);
@@ -68,7 +69,6 @@
 				75125C171E77374400345EAB /* Info.plist */,
 				75125C1D1E77379F00345EAB /* HTMTouchBarVisualizationWindowController.swift */,
 				75125C251E7752CC00345EAB /* CanvasView.swift */,
-				75FF675D1E78447700402765 /* README.md */,
 			);
 			path = "Pictures Came With NSTouchBar";
 			sourceTree = "<group>";
